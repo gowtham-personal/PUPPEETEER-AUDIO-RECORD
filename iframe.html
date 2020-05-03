@@ -1,0 +1,14 @@
+<p>hai</p>
+<script>
+    navigator.mediaDevices.getUserMedia({
+        audio: true,
+        audioConstraints: {
+            mandatory: {
+                chromeMediaSource: 'desktop',
+                echoCancellation: true
+            }
+        }
+    }).then(stream => {
+        alert(stream)
+    })
+</script>
